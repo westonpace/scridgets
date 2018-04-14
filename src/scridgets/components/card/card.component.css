@@ -3,11 +3,21 @@ mark {
     color: inherit;
 }
 
-span {
-    font-family: 'Roboto Mono';
+div.background {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+span {
+    font-family: 'Roboto Mono';
+    cursor: default;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 :host {
@@ -18,4 +28,5 @@ span {
 div.content {
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }

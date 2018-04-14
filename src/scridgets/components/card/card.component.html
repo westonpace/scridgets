@@ -1,4 +1,7 @@
-<span class="background"><mark #double>+-</mark><mark #single>-</mark>{{fillChars}}</span>
+<div class="background">
+    <span #fullSpan class="background"><mark #double>+-</mark><mark>-</mark>{{topLine}}</span>
+    <span *ngFor="let line of lines"><br/>{{line}}</span>
+</div>
 <div [ngStyle]="{'padding': getPaddingString()}" class="content">
     <ng-content></ng-content>
 </div>
